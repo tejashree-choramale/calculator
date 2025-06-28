@@ -15,3 +15,17 @@ function removeCalculationString() {
   localStorage.removeItem('calculation');
   printCalculationString();
 }
+
+function evaluateString() {
+  try {
+    let expression = calculation.replaceAll('x', '*');
+    let result = eval(expression);
+    calculation = result.toString();
+    localStorage.setItem('calculation', calculation);
+    printCalculationString();
+  } 
+  catch (error) {
+    calculation = 'Error';  
+    printCalculationString();
+  }
+}
