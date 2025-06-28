@@ -1,9 +1,20 @@
 let calculation = localStorage.getItem('calculation') || '';
+printCalculationString();
 
 function updateCalculation(n) {
+  if (calculation === 'Error') calculation = '';
+
+  const lastChar = calculation.slice(-1);
+
+  if (calculation === '' && operators.includes(n)) 
+    return;
+
+  if (operators.includes(lastChar) && operators.includes(n)) 
+    return;
+
   calculation += n;
-  console.log(calculation);
   localStorage.setItem('calculation', calculation);
+  printCalculationString();
 }
 
 function printCalculationString() {
