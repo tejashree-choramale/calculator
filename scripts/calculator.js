@@ -1,3 +1,4 @@
+const operators = ['+' , '-', '/', 'x', '.', '%'];
 let calculation = localStorage.getItem('calculation') || '';
 printCalculationString();
 
@@ -39,4 +40,10 @@ function evaluateString() {
     calculation = 'Error';  
     printCalculationString();
   }
+}
+
+function removeLastChar() {
+  calculation = calculation.slice(0, -1);
+  localStorage.setItem('calculation', calculation);
+  printCalculationString(); 
 }
