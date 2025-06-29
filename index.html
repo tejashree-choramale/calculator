@@ -4,10 +4,11 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Calculator</title>
+  <link rel="stylesheet" href="styles/calculator.css">
 </head>
 <body>
   <div class="calculator">
-    <div class="js-calculation-string">
+    <div class="display-answer js-calculation-string">
 
     </div>
     <div class="buttons-div">
@@ -29,7 +30,7 @@
         updateCalculation('/');
         printCalculationString();
       ">/</button>
-    <br>
+    
       <button class="button" onclick="
         updateCalculation('7');
         printCalculationString();
@@ -46,7 +47,7 @@
         updateCalculation('x');
         printCalculationString();
       ">x</button>
-    <br>
+    
       <button class="button" onclick="
         updateCalculation('4');
         printCalculationString();
@@ -63,7 +64,7 @@
         updateCalculation('-');
         printCalculationString();
       ">-</button>
-    <br>
+    
       <button class="button" onclick="
         updateCalculation('1');
         printCalculationString();
@@ -80,7 +81,7 @@
         updateCalculation('+');
         printCalculationString();
       ">+</button>
-    <br>
+    
       <button class="button" onclick="
         updateCalculation('0');
         printCalculationString();
