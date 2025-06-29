@@ -1,5 +1,6 @@
 :root {
   --color-bg: #FDFDFD;
+  --text-color : #1F2937;
 }
 
 body {
@@ -9,7 +10,7 @@ body {
   justify-content: center;
   align-items: center;
   background-color: var(--color-bg);
-  font-family: 'Manrope', 'Verdana';
+  font-family: 'Manrope', Helvetica, sans-serif;
 }
 
 .calculator {
@@ -45,7 +46,6 @@ body {
   gap: 9px;
   justify-items: center;
   margin-top: 10px;
-
   padding: 20px;
   flex-grow: 1;
   align-items: center;
@@ -59,4 +59,10 @@ body {
   width: 70px;
   height: 70px;
   font-size: 25px;
+  font-weight: bold;
+  border: none;
+  border-radius: 25%;
+  cursor: pointer;
+  font-family: 'Manrope', sans-serif;
+  color: var(--text-color);
 }
