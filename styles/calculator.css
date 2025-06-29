@@ -1,6 +1,9 @@
 :root {
   --color-bg: #FDFDFD;
   --text-color : #1F2937;
+  --color-primary: #C8A7F4;      /* operators & display screen */
+  --color-secondary: #E4D7F7;    /* number buttons */
+  --color-accent: #A79FB6;       /* AC button */
 }
 
 body {
@@ -10,7 +13,7 @@ body {
   justify-content: center;
   align-items: center;
   background-color: var(--color-bg);
-  font-family: 'Manrope', Helvetica, sans-serif;
+  font-family: 'Manrope', monospace;
 }
 
 .calculator {
@@ -34,7 +37,8 @@ body {
   font-weight: bold;
   border-radius: 25px 25px 25px 25px;
   padding: 0 18px 15px 25px; 
-  background-color: palevioletred;
+  background-color: var(--color-primary);
+  color: var(--text-color);
   box-sizing: border-box; 
   word-break: break-word;
   overflow-wrap: break-word;
@@ -50,7 +54,6 @@ body {
   flex-grow: 1;
   align-items: center;
   justify-content: center;
-  background-color: lightgoldenrodyellow;
 }
 
 .button,
@@ -65,4 +68,23 @@ body {
   cursor: pointer;
   font-family: 'Manrope', sans-serif;
   color: var(--text-color);
+  transition: background-color 0.2s ease;
+}
+
+.button {
+  background-color: var(--color-secondary);
+}
+
+.button-operator {
+  background-color: var(--color-primary);
+}
+
+.button-clear {
+  background-color: var(--color-accent);
+}
+
+.button:active,
+.button-operator:active,
+.button-clear:active {
+  transform: scale(0.95);
 }
