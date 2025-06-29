@@ -1,9 +1,14 @@
 :root {
   --color-bg: #FDFDFD;
   --text-color : #1F2937;
+
   --color-primary: #C8A7F4;      /* operators & display screen */
   --color-secondary: #E4D7F7;    /* number buttons */
   --color-accent: #A79FB6;       /* AC button */
+
+  --hover-primary: #d6bdf4;
+  --hover-secondary: #eee3fa;
+  --hover-accent: #c5c1cd;
 }
 
 body {
@@ -87,4 +92,16 @@ body {
 .button-operator:active,
 .button-clear:active {
   transform: scale(0.95);
+}
+
+.button:hover {
+  background-color: var(--hover-secondary); 
+}
+
+.button-operator:hover {
+  background-color: var(--hover-primary); 
+}
+
+.button-clear:hover {
+  background-color: var(--hover-accent); 
 }
