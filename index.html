@@ -4,12 +4,17 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Calculator</title>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles/calculator.css">
 </head>
 <body>
   <div class="calculator">
-    <div class="display-answer js-calculation-string">
-
+    <div class="display-wrapper">
+      <div class="display-answer js-calculation-string">
+      </div>
+        <button class="theme-switch">
+          <img id="icon" src="images/moon.png">
+        </button>
     </div>
     <div class="buttons-div">
       <button class="button-clear" onclick="

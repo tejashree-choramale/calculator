@@ -2,6 +2,18 @@ const operators = ['+' , '-', '/', 'x', '.', '%'];
 let calculation = localStorage.getItem('calculation') || '';
 printCalculationString();
 
+let icon = document.getElementById("icon");
+  icon.onclick = function() {
+    document.body.classList.toggle("dark-theme");
+    if(document.body.classList.contains("dark-theme")){
+      icon.src = "images/sun.png"
+    }
+    else{
+      icon.src = "moon.png"
+    }
+}
+
+
 function updateCalculation(n) {
   if (calculation === 'Error') calculation = '';
 
