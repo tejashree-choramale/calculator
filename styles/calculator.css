@@ -63,6 +63,20 @@ body {
   overflow-wrap: break-word;
 }
 
+.display-answer::after {
+  content: '|';
+  font-weight: normal;
+  font-size: 45px;
+  color: var(--text-color); 
+  animation: blink 1s step-start infinite;
+}
+
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
+}
+
 .buttons-div {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
