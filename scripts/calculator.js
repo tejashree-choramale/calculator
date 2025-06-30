@@ -9,10 +9,9 @@ let icon = document.getElementById("icon");
       icon.src = "images/sun.png"
     }
     else{
-      icon.src = "moon.png"
+      icon.src = "images/moon.png"
     }
 }
-
 
 function updateCalculation(n) {
   if (calculation === 'Error') calculation = '';
