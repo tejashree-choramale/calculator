@@ -9,6 +9,7 @@
   --hover-primary: #d6bdf4;
   --hover-secondary: #eee3fa;
   --hover-accent: #c5c1cd;
+  --box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
 }
 
 .dark-theme {
@@ -22,7 +23,7 @@
   --hover-primary: #B28DF1;      
   --hover-secondary: #E1D6FA;          
   --hover-accent: #C7B3E5; 
-
+  --box-shadow: 0 4px 12px rgba(0, 0, 0, 0.45);
 }
 
 body {
@@ -42,7 +43,7 @@ body {
   border-radius: 25px;
   display: flex;
   flex-direction: column;
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  box-shadow: var(--box-shadow);
 }
 
 .display-answer {
